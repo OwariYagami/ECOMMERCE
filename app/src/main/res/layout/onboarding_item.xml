@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/img1"
+    android:id="@+id/iv_img"></ImageView>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:padding="@dimen/_16sdp"
+    android:layout_marginBottom="@dimen/_100sdp">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="EXPLORE PRODUCTS"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/outfit_bold"></TextView>
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/outfit_semibld"
+
+        android:text="Jelajahi beragam produk dengan kualitas terbaik, dengan beragam kombinasi yang akan membuat hidupmu berwarna"
+        android:textColor="@color/text_secondary"
+        android:textAlignment="center"
+        android:textSize="@dimen/_10sdp"></TextView>
+</LinearLayout>
+</RelativeLayout>

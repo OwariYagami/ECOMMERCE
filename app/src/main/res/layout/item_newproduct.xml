@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_85sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="@dimen/_10sdp"
+
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/rl_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_6sdp">
+            <ImageView
+                android:id="@+id/iv_imgproduk"
+                android:layout_width="@dimen/_75sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_jaket"></ImageView>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_toRightOf="@id/rl_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_namaproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kemeja Pria"
+                android:fontFamily="@font/outfit_bold"
+                android:textSize="@dimen/_14sdp"
+                android:textColor="@color/text_primary"></TextView>
+            <TextView
+                android:layout_below="@id/tv_namaproduk"
+                android:id="@+id/tv_descproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="kemeja yang nikmat dipakai, nikmat sekali"
+                android:maxLines="2"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/outfit_semibld"
+                android:textSize="@dimen/_8sdp"
+                android:textColor="@color/text_secondary"></TextView>
+            <TextView
+                android:layout_below="@id/tv_descproduk"
+                android:id="@+id/tv_hargaproduk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Rp 10.000"
+                android:fontFamily="@font/outfit_bold"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/text_primary">
+
+            </TextView>
+            <RelativeLayout
+                android:id="@+id/btn_cart"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:background="@drawable/bg_cart"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_below="@+id/tv_descproduk"
+                android:layout_alignParentRight="true"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_cart"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_plus"></ImageView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

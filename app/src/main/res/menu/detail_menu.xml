@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ui.home.DetailActivity">
+    <item
+        android:id="@+id/menu_search" android:icon="@drawable/ic_cari" app:showAsAction="always"   android:title="Search"/>
+    <item
+        android:id="@+id/menu_share" android:icon="@drawable/ic_share" app:showAsAction="always|withText" android:title="Share"/>
+    <item
+        android:id="@+id/menu_more" android:icon="@android:drawable/ic_dialog_info" app:showAsAction="never" android:title="More">
+    </item>
+    <item
+        android:id="@+id/exit"  app:showAsAction="never" android:title="Exit">
+    </item>
+</menu>

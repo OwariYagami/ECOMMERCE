@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.AddproductActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_16sdp">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_bold"
+                android:text="Add Product"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_id"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_id_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_id"
+                        android:layout_toRightOf="@id/rl_id"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="ID product"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_id">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_1"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_nama_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_1"
+                        android:layout_toRightOf="@id/rl_1"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Nama product"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl_email">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_2"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_2"
+                        android:layout_toRightOf="@id/rl_2"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Brand product"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl2">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_3"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_3"
+                        android:layout_toRightOf="@id/rl_3"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Harga product"
+                        android:inputType="number"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl3">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/et_deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Deskripsi product"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl4">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_4"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_kategori"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_4"
+                        android:layout_toRightOf="@id/rl_4"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Kategori product"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl5">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_5"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_url_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_5"
+                        android:layout_toRightOf="@id/rl_5"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Url Image"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl6">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_6"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_url_image2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_6"
+                        android:layout_toRightOf="@id/rl_6"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Url Image"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl7">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_7"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_url_image3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_7"
+                        android:layout_toRightOf="@id/rl_7"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Url Image"
+                        android:inputType="text"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save_produk"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_btn_login"
+                android:fontFamily="@font/outfit_bold"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/cl8"
+                ></androidx.appcompat.widget.AppCompatButton>
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_bold"
+                android:text="Add Color"
+                android:textColor="@color/text_primary"
+                android:textSize="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_save_produk"></TextView>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title2">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_8"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/spinnerProducts"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_toRightOf="@id/rl_8"
+                        android:spinnerMode="dropdown"></Spinner>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl9">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_9"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_id_warna"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_9"
+                        android:layout_toRightOf="@id/rl_9"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="ID Warna"
+                        android:inputType="textCapCharacters"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cl10">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_edittext_login"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_10"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:background="@drawable/box_login">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_email"></ImageView>
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/et_warna"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_toEndOf="@+id/rl_10"
+                        android:layout_toRightOf="@id/rl_10"
+                        android:background="@null"
+                        android:fontFamily="@font/outfit_semibld"
+                        android:hint="Warna"
+                        android:inputType="textCapCharacters"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"></EditText>
+                </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_btn_login"
+                android:fontFamily="@font/outfit_bold"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintTop_toBottomOf="@+id/cl11"
+              ></androidx.appcompat.widget.AppCompatButton>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
